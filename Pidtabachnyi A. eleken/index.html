@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>landing</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Playfair+Display:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    <head>
+        <div class="container">
+            <div class="top-bar">
+                <div class="top-bar__left">
+                    <ul class="help">
+                        <li class="help__item"><a href="#" class="help__link">delivery</a></li>
+                        <li class="help__item"><a href="#" class="help__link">faq</a></li>
+                        <li class="help__item"><a href="#" class="help__link">help</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar__right">
+                    <div class="value current-currency ">dollars</div>
+                    <ul class="currency">
+                        <li class="currency__item"><a href="#" class="currency__link">dollars</a></li>
+                        <li class="currency__item"><a href="#" class="currency__link">euro</a></li>
+                        <li class="currency__item"><a href="#" class="currency__link">pounds</a></li>
+                    </ul>
+                    <span class="line"></span>
+                    <div class="value current-lang">en</div>
+                    <ul class="lang">
+                        <li class="lang__item"><a href="#" class="lang__link">en</a></li>
+                        <li class="lang__item"><a href="#" class="lang__link">ger</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="hor-line" style="margin-top:-3px">
+        <div class="container header">
+            <div class="logo"><a href="index.html">C<span>&</span>B</a></div>
+            <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__link curr_link" onclick="activeLink(event)">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" onclick="activeLink(event)">Catalog</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" onclick="activeLink(event)">News</a></li>
+                <li class="nav__item"><a href="#" class="nav__link red" onclick="activeLink(event)">Sale</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" onclick="activeLink(event)">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link" onclick="activeLink(event)">Contact</a></li>
+            </ul>
+            <div class="right-nav">
+                <div class="bag">
+                    <p class="bag__text">your bag</p>
+                    <span class="bag__value">2</span>
+                </div>
+                <div class="search"></div>
+            </div>
+        </div>
+        <hr class="hor-line">
+    </head>
+
+    <section class="container categories">
+        <h2 class="section__title">Catalog</h2>
+        <ul class="tab">
+            <li class="tab__items"><a href="javascript:void(0)" class="tab__links active_link" onclick="openStep(event, 'products_all')">ALL</a></li>
+            <li class="tab__items"><a href="javascript:void(0)" class="tab__links" onclick="openStep(event, 'products_t-shirts')">T-SHIRTS</a></li>
+            <li class="tab__items"><a href="javascript:void(0)" class="tab__links" onclick="openStep(event, 'products_sweater')">SWEATERS</a></li>
+            <li class="tab__items"><a href="javascript:void(0)" class="tab__links" onclick="openStep(event, 'products_shorts')">SHORTS</a></li>
+            <li class="tab__items"><a href="javascript:void(0)" class="tab__links" onclick="openStep(event, 'products_jackets')">JACKETS</a></li>
+            <li class="tab__items"><a href="javascript:void(0)" class="tab__links" onclick="openStep(event, 'products_accessoires')">ACCESSOIRES</a></li>
+        </ul>
+    </section>
+    <section class="container">
+        <div class="products" style="display:inline-block">
+            <div class="products__row">
+                <div class="products__col products_all products_all products_shorts">
+                    <a href="#" class="products__link_img"><img src="img/shorts_4.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Printed swimsuit</a></p>
+                    <p class="products__price">$23</p>
+                </div>
+                <div class="products__col products_all products_all products_shorts">
+                    <a href="#" class="products__link_img"><img src="img/shorts_2.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Jogging bermuda shorts</a></p>
+                    <p class="products__price"><span class="decor">$36</span><span class="red">$12</span></p>
+                </div>
+                <div class="products__col products_all products_footgear new">
+                    <a href="#" class="products__link_img"><img src="img/footgear.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Basic beach flip flops</a></p>
+                    <p class="products__price">$9</p>
+                </div>
+                <div class="products__col products_all products_accessoires">
+                    <a href="#" class="products__link_img"><img src="img/glas.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Black sunglasses</a></p>
+                    <p class="products__price">$29</p>
+                </div>
+                <div class="products__col products_all products_shirt">
+                    <a href="#" class="products__link_img"><img src="img/shirts.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Long sleeved twill shirt</a></p>
+                    <p class="products__price">$20</p>
+                </div>
+                <div class="products__col products_all products_shorts">
+                    <a href="#" class="products__link_img"><img src="img/short_1.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Basic swimsuit</a></p>
+                    <p class="products__price">$36</p>
+                </div>
+                <div class="products__col products_all products_shorts">
+                    <a href="#" class="products__link_img"><img src="img/shorts_3.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">Bleached shorts</a></p>
+                    <p class="products__price">$12</p>
+                </div>
+                <div class="products__col products_all products_t-shirts">
+                    <a href="#" class="products__link_img"><img src="img/t-shirt.jpg" class="products__img" alt="img"></a>
+                    <p class="products__name"><a href="#" class="products__link">T-shirt with lower panel</a></p>
+                    <p class="products__price"><span class="decor">$32</span><span class="red">$12</span></p>
+                </div>
+            </div>
+            <div class="load">
+                <a href="#" class="load__btn">Load more...</a>
+            </div>
+        </div>
+    </section>
+    <section class="subscribe">
+        <h5 class="subscribe__subtitle">subscribe</h5>
+        <h2 class="subscribe__title">Stay updated on news</h2>
+        <form class="form" action="index.html" method="post">
+            <input type="email"  class="form__mail" placeholder="your emailaddress">
+            <input type="submit" class="form__btn" value="">
+        </form>
+    </section>
+    <footer>
+        <div class="container footer">
+            <div class="logo"><a href="index.html">C<span>&amp;</span>B</a></div>
+            <ul class="nav">
+                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Catalog</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">News</a></li>
+                <li class="nav__item"><a href="#" class="nav__link red">Sale</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="right-nav">
+                <div class="bag">
+                    <p class="bag__text">©2010 - 2017 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/script.js">
+    </script>
+    <script type="text/javascript">
+
+
+        click();
+        inner();
+    </script>
+    </body>
+</html>
